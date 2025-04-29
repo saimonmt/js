@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Lista de Tarefas</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/709/709496.png">
+        
+        <audio id="som-adicionar" src="https://actions.google.com/sounds/v1/cartoon/clang_and_wobble.ogg" preload="auto"></audio>
+        <audio id="som-remover" src="https://actions.google.com/sounds/v1/cartoon/wood_plank_flicks.ogg" preload="auto"></audio>
+
+        <link rel="manifest" href="manifest.json">
+        <meta name="theme-color" content="#1db954">
+
+      </head>
+      
+<body>
+    <h1>Minha Lista de Tarefas</h1>
+    <!-- <button onclick="mudarTema()">Alterar Tema</button> -->
+
+    <div style="margin-bottom: 15px;">
+      <input type="text" id="inputTarefa" placeholder="Digite uma tarefa">
+      <select id="categoriaTarefa">
+        <option value="Pessoal">Pessoal</option>
+        <option value="Trabalho">Trabalho</option>
+        <option value="Estudo">Estudo</option>
+        <option value="Outro">Outro</option>
+      </select>
+      <button onclick="adicionarTarefa()">Adicionar</button>
+      <button onclick="exportarLista()">Exportar Lista</button>
+    </div>
+    
+    <div style="margin-bottom: 15px;">
+      <label>Filtrar: </label>
+      <select id="filtro" onchange="filtrarTarefas()">
+        <option value="todas">Todas</option>
+        <option value="concluidas">Concluídas</option>
+        <option value="pendentes">Pendentes</option>
+      </select>
+    </div>
+    
+    <ul id="listaTarefas"></ul>
+
+  <script src="jscript.js"></script>
+  
+</body>
+</html>
+
