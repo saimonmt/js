@@ -1,0 +1,11 @@
+Aula 7 - 29/04/2025
+
+Projeto Web com Javascript
+Passos:
+Defina o objetivo;
+Criação do escopo;
+Validação do escopo;
+Prototipagem (Confecção) ;
+Validação do Projeto;
+Entrega (Git Hub Pages);
+•	Chat Gpt = Me de ideias de Projeto Web (ideia) 
